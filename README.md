@@ -2,7 +2,7 @@
 
 Controle de estoque no modelo PEPS utilizando JS
 
-Python 3.8.0 </br>
+JavaScript
 Microsoft VSCode 1.41.1 </br>
 Códificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br> 
@@ -13,7 +13,7 @@ pt-BR </br>
 
 Inventory control in PEPS model using JS
 
-Python 3.8.0 </br>
+JavaScript
 Microsoft VSCode 1.41.1 </br>
 Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br>
