@@ -1,6 +1,6 @@
 # Controle de estoque PEPS em JS
 
-Controle de estoque no modelo PEPS utilizando JS
+Controle de estoque no modelo PEPS utilizando JavaScript
 
 JavaScript </br>
 HTML5 </br>
@@ -13,7 +13,7 @@ pt-BR </br>
 
 # PEPS Inventory control in JS
 
-Inventory control in PEPS model using JS
+Inventory control in PEPS model using JavaScript
 
 JavaScript </br>
 HTML5 </br>
