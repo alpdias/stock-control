@@ -9,9 +9,27 @@ Criado em 01/2020
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Estoque PEPS</title>
+        <title>Controle de Estoque</title>
+        <link rel="stylesheet" href="view.css">
     </head>
     <body>
-        
+        <header>
+            <p>CONTROLE DE ESTOQUE JS</p>
+        </header>
+        <section>
+            <div id="dados">
+                <p><input type="text" name="produto" id="produto" placeholder="Produto" size="60"></p>
+                <p><input type="number" name="quantidade" id="quantidade" placeholder="Quantidade"></p>
+                <p><input type="number" name="preço" id="preço" placeholder="R$" step="any"></p>
+                <p id="botoes">
+                    <button id="entrada">ENTRADA</button>
+                    <button id="saida">SAÍDA</button>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <p>COPYRIGHT &copy; 2019 | PAULO</p>
+        </footer>
+        <script src="controle-estoque.js"></script>
     </body>
 </html>

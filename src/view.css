@@ -2,3 +2,33 @@
 Criado em 01/2020
 @Autor: Paulo https://github.com/alpdias
 */
+
+body {
+    background-color: rgba(94, 94, 160, 0.767);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    width: 30%;
+}
+#dados {
+    text-align: justify;
+}
+#botoes {
+    text-align: center;
+}
+header {
+    color: white;
+    font-weight: bolder;
+    font-size: 18pt;
+    padding: 10px;
+}
+footer {
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 10pt;
+}
