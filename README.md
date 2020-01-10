@@ -1,6 +1,6 @@
 # Controle de estoque em JS
 
-Um controle de estoque simples para adicionar e remover items de um estoque utilizando HTML5, CSS3 e principalmente JavaScript. Utiliza o cálculo de média para o preço dos produtos, podendo adicionar e remover do estoque os produtos em sua quantidade total ou parcial.
+Controle de estoque simples, utilizando JavaScript, HTML5 e CSS3. Com funções de adicionar e remover itens parcialmente ou em sua totalidade, e utilizando o cálculo de média para o preço dos produtos em estoque.
 
 JavaScript </br>
 HTML5 | CSS3 </br>
@@ -12,7 +12,7 @@ pt-BR </br>
 
 # Inventory control in JS
 
-A simple inventory control to add and remove items from a stock using HTML5, CSS3 and mostly JavaScript. It uses the averaging for the price of products, being able to add and remove from stock the products in their total or partial quantity.
+Simple inventory control using JavaScript, HTML5 and CSS3.  With functions to add and remove items in part or in full, and by averaging the price of products in stock.
 
 JavaScript </br>
 HTML5 | CSS3 </br>
