@@ -5,7 +5,7 @@ Controle de estoque simples, utilizando JavaScript, HTML5 e CSS3. Com funções 
 JavaScript </br>
 HTML5 | CSS3 </br>
 Microsoft VSCode 1.41.1 </br>
-Códificação: -&lowast;- coding: utf-8 -&lowast;- </br>
+Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br> 
 
 --------------------------------------------------------------------------------------------------------------------------
