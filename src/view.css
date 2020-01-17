@@ -8,6 +8,12 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+header {
+    color: white;
+    font-weight: bolder;
+    font-size: 18pt;
+    padding: 10px;
+}
 section {
     background-color: white;
     color: black;
@@ -33,12 +39,6 @@ section {
     border: transparent;
     font-weight: bolder;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
-}
-header {
-    color: white;
-    font-weight: bolder;
-    font-size: 18pt;
-    padding: 10px;
 }
 footer {
     color: rgba(255, 255, 255, 0.425);
