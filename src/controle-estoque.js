@@ -31,4 +31,15 @@ function adicionar() { // funcao para adicionar um produto ao estoque
         quant: qtd,
         valor: prç,
     }
+
+
+    if (localStorage.getItem('estoqueItens') === null) {
+        var itens = []
+        itens.push(item)
+        localStorage.setItem('estoqueItens',  JSON.stringify(item)) // armazena um item no navegador e transfora em um JSON do tipo string 
+    } else {
+        var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma em um JSON do tipo objeto
+        itens.push(item)
+        localStorage.setItem('estoqueItens',  JSON.stringify(item))
+    }
 }
