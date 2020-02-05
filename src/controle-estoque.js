@@ -33,7 +33,7 @@ function adicionar() { // funcao para adicionar um produto ao estoque
     }
 
 
-    if (localStorage.getItem('estoqueItens') === null) {
+    if (localStorage.getItem('estoqueItens') === null) { // criar uma tabela para armazenar dados caso não exista
         var itens = []
         itens.push(item)
         localStorage.setItem('estoqueItens',  JSON.stringify(item)) // armazena um item no navegador e transfora em um JSON do tipo string 
