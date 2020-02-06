@@ -36,10 +36,26 @@ function adicionar() { // funcao para adicionar um produto ao estoque
     if (localStorage.getItem('estoqueItens') === null) { // criar uma tabela para armazenar dados caso não exista
         var itens = []
         itens.push(item)
-        localStorage.setItem('estoqueItens',  JSON.stringify(item)) // armazena um item no navegador e transfora em um JSON do tipo string 
+        localStorage.setItem('estoqueItens', JSON.stringify(itens)) // armazena um item no navegador e transfora em um JSON do tipo string 
     } else {
         var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma em um JSON do tipo objeto
         itens.push(item)
-        localStorage.setItem('estoqueItens',  JSON.stringify(item))
+        localStorage.setItem('estoqueItens', JSON.stringify(itens))
+    }
+}
+
+function mostrarResultado() { // funcao para mostrar os itens adicionados
+    var itens = JSON.parse(localStorage.getItem('estoqueItens')) // recebe as informaçoes armazenadas, passando para um JSON em objeto
+    var resultadoItens = document.getElementById('resultados') // busca o elemento HTML pelo ID
+
+    resultadoItens.innerHTML = ''
+
+    for (var i = 0; i < itens.length; i++) { // loop para mostrar os resultados buscando dentro do array
+        var nome =  itens[i].nome
+        var quant = itens[i].quant
+        var valor = itens[i].valor
+            
+        resultadoItens.innerHTML += '<tr><td>' + nome + '</td><td>' + quant + '</td><td>' + valor + '</td></tr>' // exibi o resultado 
+
     }
 }

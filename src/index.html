@@ -12,11 +12,11 @@ Criado em 01/2020
         <title>Controle de Estoque</title>
         <link rel="stylesheet" href="view.css">
     </head>
-    <body>
+    <body onload="mostrarResultado()">
         <header>
             <p>CONTROLE DE ESTOQUE JS</p>
         </header>
-        <section>
+        <section id="input">
             <div id="dados">
                 <p>&nbsp;&nbsp;Preencha os campos para adicionar ou remover um item! &#128230;</p>
                 <p><input type="text" name="produto" id="produto" placeholder="Nome do Produto"></p>
@@ -26,6 +26,13 @@ Criado em 01/2020
                     <input type="button" id="entrada" value="ENTRADA" onclick="verificar(), adicionar()">
                     <input type="button" id="saida" value="SAÍDA" onclick="saida()">
                 </p>
+            </div>
+        </section>
+        <section id="output">
+            <div id="estoque">
+                <table>
+                    <tbody id="resultados"></tbody>
+                </table>
             </div>
         </section>
         <footer>
