@@ -55,7 +55,7 @@ function mostrarResultado() { // funcao para mostrar os itens adicionados
         var quant = itens[i].quant
         var valor = itens[i].valor
             
-        resultadoItens.innerHTML += '<tr><td>' + nome + '</td><td>' + quant + '</td><td>' + valor + '</td></tr>' // exibi o resultado 
+        resultadoItens.innerHTML += '<tr><td>' + nome + '</td><td>' + quant + '</td><td>' + valor + '</td><td>' + '<button>REMOVER</button>' + '</td></tr>' // exibi o resultado 
 
     }
 }
