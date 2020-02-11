@@ -58,6 +58,17 @@ section#output {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
 }
 
+table {
+    margin: auto;
+    width: 30%;
+}
+
+th {
+    font-size: 10pt;
+    color: rgba(0, 0, 0, 0.685);
+    border-bottom: solid rgba(0, 0, 0, 0.411);
+}
+
 footer {
     color: rgba(255, 255, 255, 0.425);
     font-size: 10pt;
