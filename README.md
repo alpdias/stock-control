@@ -12,7 +12,7 @@ pt-BR </br>
 
 # Inventory control in JS
 
-Simple stock control, using JavaScript, HTML5 and CSS3. With functions to add and remove items / products from an inventory list.
+Simple stock control, using JavaScript, HTML5 and CSS3. With functions to add and remove items/products from an inventory list.
 
 JavaScript </br>
 HTML5 | CSS3 </br>

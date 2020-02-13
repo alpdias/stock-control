@@ -34,8 +34,8 @@ section#input {
     box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.356);
 }
 
-#entrada, #saida {
-    background-color: red;
+#excluir {
+    background-color: rgba(255, 0, 0, 0.76);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 2%;
@@ -47,6 +47,18 @@ section#input {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
 }
 
+#adicionar {
+    background-color: rgba(0, 0, 255, 0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-bottom: 0px;
+    border: transparent;
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+}
 section#output {
     background-color: white;
     color: black;
@@ -56,11 +68,6 @@ section#output {
     margin-top: 0.5%;
     width: 32%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
-}
-
-table {
-    margin: auto;
-    width: 30%;
 }
 
 th {

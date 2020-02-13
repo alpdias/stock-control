@@ -9,16 +9,13 @@ var preço = document.getElementById("preço") // variavel que recebe o input co
 
 function verificar() { // funçao para verificar se todos os items estao preenchidos
     if (produto.value == "" || quantidade.value == 0 || preço.value <= 0) {
-    window.alert(`ERRO! Preencha todos os campos para inserir um produto no estoque.`)
+    window.alert(`Preencha todos os campos para inserir um produto no estoque.`)
     } 
 }
 
-function saida() { // funçao para verificar a saida esta valida
-    if (preço.value > 0) {
-    window.alert(`ERRO! Não preencha o 'PREÇO' para remover um produto do estoque.`)
-    } else if (produto.value == "" || quantidade.value == 0) {
-    window.alert(`ERRO! Preencha 'PRODUTO' e 'QUANTIDADE' para remover um produto do estoque.`)
-    }
+function excluir() { // funçao para verificar a saida esta valida
+    localStorage.removeItem("estoqueItens")
+    window.alert(`Estoque excluído!!`)
 }
 
 function adicionar() { // funcao para adicionar um produto ao estoque
