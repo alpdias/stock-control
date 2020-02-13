@@ -7,7 +7,7 @@ var produto = document.getElementById("produto") // variavel que recebe o input 
 var quantidade = document.getElementById("quantidade") // variavel que recebe o input com id 'quantidade'
 var preço = document.getElementById("preço") // variavel que recebe o input com id 'preço'
 
-function verificar() { // funçao para veriicar se todos os items estao preenchidos
+function verificar() { // funçao para verificar se todos os items estao preenchidos
     if (produto.value == "" || quantidade.value == 0 || preço.value <= 0) {
     window.alert(`ERRO! Preencha todos os campos para inserir um produto no estoque.`)
     } 
@@ -56,6 +56,11 @@ function mostrarResultado() { // funcao para mostrar os itens adicionados
         var valor = itens[i].valor
             
         resultadoItens.innerHTML += '<tr><td>' + nome + '</td><td>' + quant + '</td><td>' + valor + '</td><td>' + '<button style="background-color: red; font-family: Arial, Helvetica, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;">&nbsp;&nbsp;X&nbsp;&nbsp;</button>' + '</td></tr>' // exibi o resultado 
+
+        produto.value = ''
+        quantidade.value = ''
+        preço.value = ''
+        produto.focus()
 
     }
 }
