@@ -46,6 +46,11 @@ function adicionar() {
     }
 }
 
+// funçao para remover um item
+function removerItem(nome) {
+    console.log(nome)
+}
+
 // funcao para mostrar os itens adicionados
 function mostrarResultado() { 
     var itens = JSON.parse(localStorage.getItem('estoqueItens')) // recebe as informaçoes armazenadas, passando para um JSON em objeto
@@ -63,7 +68,7 @@ function mostrarResultado() {
         resultadoItens.innerHTML += '<tr><td>' + nome + 
                                     '</td><td>' + quant + 
                                     '</td><td>' + valor + 
-                                    '</td><td>' + '<button style="background-color: red; font-family: Arial, Helvetica, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;">&nbsp;&nbsp;X&nbsp;&nbsp;</button>' + 
+                                    '</td><td>' + '<button style="background-color: red; font-family: Arial, Helvetica, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;" onclick="removerItem(\'' + nome + '\')">&nbsp;&nbsp;X&nbsp;&nbsp;</button>' + 
                                     '</td></tr>'
 
         // zera os campos apos inserir os dados
