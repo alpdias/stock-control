@@ -10,7 +10,7 @@ var preço = document.getElementById("preço") // variavel que recebe o input co
 // funçao para verificar se todos os items estao preenchidos antes de adicionar
 function verificar() { 
     if (produto.value == "" || quantidade.value == 0 || preço.value <= 0) {
-    window.alert(`Preencha todos os campos para adicionar um produto no estoque.`)
+    window.alert(`Preencha todos os campos para adicionar um produto no estoque!!`)
     } 
 }
 
@@ -26,7 +26,7 @@ function adicionar() {
     var qtd = document.getElementById("quantidade").value // recebe o 'valor' da variavel > quantidade
     var prç = document.getElementById("preço").value // recebe o 'valor' da variavel > preço
 
-    // cria um objeto
+    // cria um objeto 'item'
     item = { 
         // atributos do objeto
         nome: novo, 
@@ -40,7 +40,7 @@ function adicionar() {
         itens.push(item)
         localStorage.setItem('estoqueItens', JSON.stringify(itens)) // armazena um item no navegador e transforma em um JSON do tipo string 
     } else {
-        var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma em um JSON do tipo objeto
+        var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma um item em um JSON do tipo objeto
         itens.push(item)
         localStorage.setItem('estoqueItens', JSON.stringify(itens))
     }
@@ -71,7 +71,7 @@ function mostrarResultado() {
                                     '</td><td>' + '<button style="background-color: red; font-family: Arial, Helvetica, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;" onclick="removerItem(\'' + nome + '\')">&nbsp;&nbsp;X&nbsp;&nbsp;</button>' + 
                                     '</td></tr>'
 
-        // zera os campos apos inserir os dados
+        // zera os campos apos inserir um item
         produto.value = ''
         quantidade.value = ''
         preço.value = ''
