@@ -48,7 +48,17 @@ function adicionar() {
 
 // funçao para remover um item
 function removerItem(nome) {
-    console.log(nome)
+    var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma uma 'string' em um JSON
+
+    for (var i = 0; i < itens.length; i++) {
+        if (itens[i].nome == nome) {
+            itens.splice(i, 1)
+        }
+
+        localStorage.setItem('estoqueItens', JSON.stringify(itens)) // transforma um item JSON em 'string'
+    }
+
+    mostrarResultado()
 }
 
 // funcao para mostrar os itens adicionados
