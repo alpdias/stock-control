@@ -10,7 +10,7 @@ var preço = document.getElementById("preço") // variavel que recebe o input co
 // funçao para verificar se todos os items estao preenchidos antes de adicionar
 function verificar() { 
     if (produto.value == "" || quantidade.value == 0 || preço.value <= 0) {
-    window.alert(`Preencha todos os campos para adicionar um produto no estoque!!`)
+    window.alert(`Preencha todos os campos para adicionar um produto/item no estoque!!`)
     } 
 }
 
@@ -25,6 +25,12 @@ function adicionar() {
     var novo = document.getElementById("produto").value // recebe o 'valor' da variavel > produto
     var qtd = document.getElementById("quantidade").value // recebe o 'valor' da variavel > quantidade
     var prç = document.getElementById("preço").value // recebe o 'valor' da variavel > preço
+
+    // verifica se todos os itens estao preenchidos antes de adicionar 
+    if (!novo && !qtd && !prç) { 
+        window.alert(`Preencha todos os campos para adicionar um produto/item no estoque!!`)
+        return false // retorna 'false' e não prosegue a funçao
+    }
 
     // cria um objeto 'item'
     item = { 
