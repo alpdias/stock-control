@@ -50,15 +50,15 @@ function adicionar() {
 function removerItem(nome) {
     var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma uma 'string' em um JSON
 
-    for (var i = 0; i < itens.length; i++) {
+    for (var i = 0; i < itens.length; i++) { // busca os itens dentro do 'array'
         if (itens[i].nome == nome) {
-            itens.splice(i, 1)
+            itens.splice(i, 1) // remove o item especifico
         }
 
         localStorage.setItem('estoqueItens', JSON.stringify(itens)) // transforma um item JSON em 'string'
     }
 
-    mostrarResultado()
+    mostrarResultado() // recarrega o estoque
 }
 
 // funcao para mostrar os itens adicionados
