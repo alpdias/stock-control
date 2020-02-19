@@ -16,8 +16,12 @@ function verificar() {
 
 // funçao para excluir toda a lista de estoque
 function excluir() { 
-    localStorage.removeItem("estoqueItens")
-    window.alert(`Estoque excluído!!`)
+    if (confirm(`Tem certeza que deseja excluir todos os produtos/itens do estoque?`)) { // mostra uma confirmaçao antes de excluir todo o estoque
+        localStorage.removeItem("estoqueItens") // exclui todo os itens  gravados no 'locastorage'
+        window.alert(`Estoque excluído!!`)
+    } else {
+        return false // retorna 'false' e não prosegue a funçao
+    }
 }
 
 // funcao para adicionar um produto ao estoque
@@ -27,7 +31,11 @@ function adicionar() {
     var prç = document.getElementById("preço").value // recebe o 'valor' da variavel > preço
 
     // verifica se todos os itens estao preenchidos antes de adicionar 
-    if (!novo && !qtd && !prç) { 
+    if (!novo) { 
+        return false // retorna 'false' e não prosegue a funçao
+    } else if (!qtd) {
+        return false // retorna 'false' e não prosegue a funçao
+    } else if (!prç) {
         window.alert(`Preencha todos os campos para adicionar um produto/item no estoque!!`)
         return false // retorna 'false' e não prosegue a funçao
     }
@@ -81,9 +89,9 @@ function mostrarResultado() {
         var valor = itens[i].valor
         
         // insere os resultado dentro da tabela em HTML pelo JS
-        resultadoItens.innerHTML += '<tr><td>' + nome + 
-                                    '</td><td>' + quant + 
-                                    '</td><td>' + valor + 
+        resultadoItens.innerHTML += '<tr><td style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);">' + nome + 
+                                    '</td><td style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411)">' + quant + 
+                                    '</td><td style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411)">' + valor + 
                                     '</td><td>' + '<button style="background-color: #B8336A; font-family: Arial, Helvetica, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;" onclick="removerItem(\'' + nome + '\')">&nbsp;&nbsp;X&nbsp;&nbsp;</button>' + 
                                     '</td></tr>'
 
