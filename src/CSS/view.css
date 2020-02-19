@@ -17,7 +17,7 @@ header {
 }
 
 section#input {
-    background-color: white;
+    background-color: #EBEBEB;
     color: black;
     border-radius: 10px;
     padding: 1%;
@@ -35,7 +35,7 @@ section#input {
 }
 
 #adicionar {
-    background-color: rgba(0, 0, 255, 0.76);
+    background-color: #372772;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 2%;
@@ -48,7 +48,7 @@ section#input {
 }
 
 #excluir {
-    background-color: rgba(255, 0, 0, 0.76);
+    background-color: #B8336A;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 2%;
