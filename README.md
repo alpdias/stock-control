@@ -2,7 +2,7 @@
 
 Controle de estoque simples, utilizando JavaScript, HTML5 e CSS3. Com funções de adicionar e remover itens de uma lista de estoque, podendo remover os itens em sua totalidade ou item por item, e com funções de verificação de entrada e saída das informações.
 
-Disponível no meu portifólio https://paulodeveloper.netlify.com/
+<strong>Disponível no meu portifólio:</strong> https://paulodeveloper.netlify.com/
 
 JavaScript </br>
 HTML5 | CSS3 </br>
@@ -20,7 +20,7 @@ pt-BR </br>
 
 Simple stock control, using JavaScript, HTML5 and CSS3.  With functions to add and remove items from a stock list, being able to remove the items in their entirety or item by item, and with functions for checking in and out of information.
 
-Available in my portfolio https://paulodeveloper.netlify.com/
+<strong>Available in my portfolio:</strong> https://paulodeveloper.netlify.com/
 
 JavaScript </br>
 HTML5 | CSS3 </br>
