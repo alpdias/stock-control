@@ -77,6 +77,7 @@ section#output {
 }
 
 th {
+    background-color: #EBEBEB;
     font-size: 10pt;
     color: rgba(0, 0, 0, 0.685);
     border-bottom: solid rgba(0, 0, 0, 0.411);
