@@ -4,6 +4,8 @@ Controle de estoque simples, utilizando JavaScript, HTML5 e CSS3. Com funções 
 
 <strong>Disponível no meu portifólio:</strong> https://paulodeveloper.netlify.com/
 
+Andamento -> <strong>80%</strong> - <strong>Online</strong>
+
 JavaScript </br>
 HTML5 | CSS3 </br>
 Microsoft VSCode 1.41.1 </br>
@@ -21,6 +23,8 @@ pt-BR </br>
 Simple stock control, using JavaScript, HTML5 and CSS3.  With functions to add and remove items from a stock list, being able to remove the items in their entirety or item by item, and with functions for checking in and out of information.
 
 <strong>Available in my portfolio:</strong> https://paulodeveloper.netlify.com/
+
+Progress -> <strong>80%</strong> - <strong>Online</strong>
 
 JavaScript </br>
 HTML5 | CSS3 </br>
