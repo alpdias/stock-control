@@ -14,7 +14,7 @@ pt-BR </br>
 
 ![controle-estoque](https://github.com/alpdias/controle-estoque-js/blob/master/img/controle-estoque-view.png)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b040e81b-d0b1-4ca8-a82e-a5627b7265c2/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3af9d0f4-63f3-41c1-ae85-dabf9e08b864/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -34,6 +34,6 @@ pt-BR </br>
 
 ![controle-estoque](https://github.com/alpdias/controle-estoque-js/blob/master/img/controle-estoque-view.png)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b040e81b-d0b1-4ca8-a82e-a5627b7265c2/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3af9d0f4-63f3-41c1-ae85-dabf9e08b864/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
 
 --------------------------------------------------------------------------------------------------------------------------
