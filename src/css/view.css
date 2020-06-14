@@ -23,10 +23,11 @@ header {
 section#input {
     background-color: #EBEBEB;
     color: black;
-    border-radius: 10px;
+    border-radius: 10px;    
     padding: 1%;
     margin: auto;
     width: 32%;
+    min-width: max-content;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
 }
 
@@ -71,8 +72,9 @@ section#output {
     border-radius: 10px;
     padding: 1%;
     margin: auto;
-    margin-top: 0.5%;
+    margin-top: 10px;
     width: 32%;
+    min-width: max-content;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
 }
 
@@ -81,6 +83,7 @@ th {
     font-size: 10pt;
     color: rgba(0, 0, 0, 0.685);
     border-bottom: solid rgba(0, 0, 0, 0.411);
+    padding: 0% 2.5% 0% 2.5%;
 }
 
 footer {
