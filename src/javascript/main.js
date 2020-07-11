@@ -9,7 +9,7 @@ var preço = document.getElementById("preço") // variavel que recebe o input co
 
 // funçao para verificar se todos os items estao preenchidos antes de adicionar
 function verificar() { 
-    if (produto.value == "" || quantidade.value == 0 || preço.value <= 0) {
+    if (produto.value == "" && quantidade.value == 0 && preço.value <= 0) {
     window.alert(`Preencha todos os campos para adicionar um produto/item no estoque!!`)
     } 
 }
