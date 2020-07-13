@@ -7,22 +7,31 @@ var produto = document.getElementById("produto") // variavel que recebe o input 
 var quantidade = document.getElementById("quantidade") // variavel que recebe o input com id 'quantidade'
 var preço = document.getElementById("preço") // variavel que recebe o input com id 'preço'
 
-// funçao para verificar se todos os items estao preenchidos antes de adicionar
-function verificar() { 
+function verificar() { // funçao para verificar se todos os items estao preenchidos antes de adicionar
     if (produto.value == "" && quantidade.value == 0 && preço.value <= 0) {
-    window.alert(`Preencha todos os campos para adicionar um produto/item no estoque!!`)
-    } 
-}
+        window.alert('Preencha todos os campos para adicionar um produto/item no estoque!'); // exibe alertas de erro
+    } else if (produto.value == "") {
+        window.alert('Preencha o "Nome do Item" para adicionar um produto/item no estoque!');
+    } else if (quantidade.value == 0) {
+        window.alert('Preencha a "Quantidade" para adicionar um produto/item no estoque!');
+    } else if (preço.value <= 0) {
+        window.alert('Preencha o campo "Preço" para adicionar um produto/item no estoque!');
+    };
+};
 
-// funçao para excluir toda a lista de estoque
-function excluir() { 
+function excluir() { // funçao para excluir toda a lista de estoque
     if (confirm(`Tem certeza que deseja excluir todos os produtos/itens do estoque?`)) { // mostra uma confirmaçao antes de excluir todo o estoque
-        localStorage.removeItem("estoqueItens") // exclui todo os itens  gravados no 'locastorage'
-        window.alert(`Estoque excluído!!`)
+        if (localStorage.length === 0) { // verificar se tem alguma coisa no estoque
+            window.alert('Estoque vazio!');
+        } else {
+            localStorage.removeItem("estoqueItens"); // exclui todo os itens  gravados no 'locastorage'
+            window.alert(`Estoque excluído!`);
+        };
+        
     } else {
-        return false // retorna 'false' e não prosegue a funçao
-    }
-}
+        return false; // retorna 'false' e não prosegue a funçao
+    };
+};
 
 // funcao para adicionar um produto ao estoque
 function adicionar() { 
@@ -36,7 +45,6 @@ function adicionar() {
     } else if (!qtd) {
         return false // retorna 'false' e não prosegue a funçao
     } else if (!prç) {
-        window.alert(`Preencha todos os campos para adicionar um produto/item no estoque!!`)
         return false // retorna 'false' e não prosegue a funçao
     }
 
