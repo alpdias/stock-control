@@ -1,4 +1,4 @@
-# Controle de estoque em JS
+# Controle de estoque
 
 Controle de estoque simples, utilizando JavaScript, HTML5 e CSS3. Com funções de adicionar e remover itens de uma lista de estoque, podendo remover os itens em sua totalidade ou item por item, e com funções de verificação de entrada e saída das informações.
 
@@ -18,7 +18,7 @@ pt-BR </br>
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# Inventory control in JS
+# Inventory control
 
 Simple stock control, using JavaScript, HTML5 and CSS3.  With functions to add and remove items from a stock list, being able to remove the items in their entirety or item by item, and with functions for checking in and out of information.
 
