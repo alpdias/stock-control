@@ -1,6 +1,6 @@
 # Controle de estoque
 
-Controle de estoque simples, utilizando JavaScript, HTML5 e CSS3. Com funções de adicionar e remover itens de uma lista de estoque, podendo remover os itens em sua totalidade ou item por item, e com funções de verificação de entrada e saída das informações.
+Controle de estoque simples, utilizando <strong>JavaScript</strong>, <strong>HTML5</strong> e <strong>CSS3</strong>. Com funções de adicionar e remover itens de uma lista de estoque, podendo remover os itens em sua totalidade ou item por item, e com funções de verificação de entrada e saída das informações.
 
 <strong>Disponível no meu portifólio:</strong> https://paulodeveloper.netlify.com/
 
@@ -20,7 +20,7 @@ pt-BR </br>
 
 # Inventory control
 
-Simple stock control, using JavaScript, HTML5 and CSS3.  With functions to add and remove items from a stock list, being able to remove the items in their entirety or item by item, and with functions for checking in and out of information.
+Simple inventory control, using <strong>JavaScript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>. With functions to add and remove items from a stock list, being able to remove the items in their entirety or item by item, and with functions to verify the entry and exit of information.
 
 <strong>Available in my portfolio:</strong> https://paulodeveloper.netlify.com/
 
