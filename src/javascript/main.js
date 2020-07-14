@@ -8,21 +8,29 @@ var quantidade = document.getElementById("quantidade") // variavel que recebe o 
 var preço = document.getElementById("preço") // variavel que recebe o input com id 'preço'
 
 function verificar() { // funçao para verificar se todos os items estao preenchidos antes de adicionar
+
     if (produto.value == "" && quantidade.value == 0 && preço.value <= 0) {
         window.alert('Preencha todos os campos para adicionar um produto/item no estoque!'); // exibe alertas de erro
+
     } else if (produto.value == "") {
         window.alert('Preencha o "Nome do Item" para adicionar um produto/item no estoque!');
+
     } else if (quantidade.value == 0) {
         window.alert('Preencha a "Quantidade" para adicionar um produto/item no estoque!');
+
     } else if (preço.value <= 0) {
         window.alert('Preencha o campo "Preço" para adicionar um produto/item no estoque!');
     };
+
 };
 
-function excluir() { // funçao para excluir toda a lista de estoque
+function excluir() { // funçao para excluir toda a lista de estoque ou nao
+
     if (confirm(`Tem certeza que deseja excluir todos os produtos/itens do estoque?`)) { // mostra uma confirmaçao antes de excluir todo o estoque
+
         if (localStorage.length === 0) { // verificar se tem alguma coisa no estoque
             window.alert('Estoque vazio!');
+
         } else {
             localStorage.removeItem("estoqueItens"); // exclui todo os itens  gravados no 'locastorage'
             window.alert(`Estoque excluído!`);
@@ -30,23 +38,29 @@ function excluir() { // funçao para excluir toda a lista de estoque
         
     } else {
         return false; // retorna 'false' e não prosegue a funçao
+
     };
+    
 };
 
 // funcao para adicionar um produto ao estoque
 function adicionar() { 
-    var novo = document.getElementById("produto").value // recebe o 'valor' da variavel > produto
-    var qtd = document.getElementById("quantidade").value // recebe o 'valor' da variavel > quantidade
-    var prç = document.getElementById("preço").value // recebe o 'valor' da variavel > preço
+
+    var novo = document.getElementById("produto").value; // recebe o 'valor' da variavel > produto
+    var qtd = document.getElementById("quantidade").value; // recebe o 'valor' da variavel > quantidade
+    var prç = document.getElementById("preço").value; // recebe o 'valor' da variavel > preço
 
     // verifica se todos os itens estao preenchidos antes de adicionar 
     if (!novo) { 
-        return false // retorna 'false' e não prosegue a funçao
+        return false; // retorna 'false' e não prosegue a funçao
+
     } else if (!qtd) {
-        return false // retorna 'false' e não prosegue a funçao
+        return false; // retorna 'false' e não prosegue a funçao
+
     } else if (!prç) {
-        return false // retorna 'false' e não prosegue a funçao
-    }
+        return false; // retorna 'false' e não prosegue a funçao
+
+    };
 
     // cria um objeto 'item'
     item = { 
@@ -54,19 +68,24 @@ function adicionar() {
         nome: novo, 
         quant: qtd,
         valor: prç,
-    }
+    };
 
     // criar uma tabela para armazenar os dados, caso não exista
     if (localStorage.getItem('estoqueItens') === null) { 
-        var itens = []
-        itens.push(item)
-        localStorage.setItem('estoqueItens', JSON.stringify(itens)) // armazena um item no navegador e transforma em um JSON do tipo string 
+
+        var itens = [];
+        itens.push(item);
+        localStorage.setItem('estoqueItens', JSON.stringify(itens)); // armazena um item no navegador e transforma em um JSON do tipo string 
+
     } else {
-        var itens = JSON.parse(localStorage.getItem('estoqueItens')) // transforma um item em um JSON do tipo objeto
-        itens.push(item)
-        localStorage.setItem('estoqueItens', JSON.stringify(itens))
-    }
-}
+
+        var itens = JSON.parse(localStorage.getItem('estoqueItens')); // transforma um item em um JSON do tipo objeto
+        itens.push(item);
+        localStorage.setItem('estoqueItens', JSON.stringify(itens));
+
+    };
+
+};
 
 // funçao para remover um item
 function removerItem(nome) {
