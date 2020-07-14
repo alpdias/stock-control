@@ -8,38 +8,32 @@ Criado em 01/2020
     <head>
         <meta charset="UTF-8">
         <title>Controle de Estoque</title>
+        <!--
         <link rel="stylesheet" href="css/view.css">
+        -->
     </head>
     <body onload="mostrarResultado()">
-        <header>
-            <p>CONTROLE DE ESTOQUE</p>
-        </header>
-        <section id="input">
-            <div id="dados">
-                <p>&nbsp;&nbsp;Preencha os campos para adicionar ou remover um item! &#128230;</p>
-                <p><input type="text" name="produto" id="produto" placeholder="Nome do Item"></p>
-                <p><input type="number" name="quantidade" id="quantidade" placeholder="Quantidade"></p>
-                <p><input type="number" name="preço" id="preço" placeholder="Preço R$" step="any"></p>
-                <p id="botoes">
-                    <input type="button" id="adicionar" value="ADICIONAR" onclick="verificar(), adicionar(), mostrarResultado()">
-                    <input type="button" id="excluir" value="EXCLUIR" onclick="excluir(), mostrarResultado()">
-                </p>
-            </div>
-        </section>
-        <section id="output">
-            <div id="estoque">
-                <table cellspacing="10" cellpadding="2" width="100%" margin="auto">
-                    <th>&nbsp;ITEM&nbsp;</th>
-                    <th>&nbsp;QUANTIDADE (UND)&nbsp;</th>
-                    <th>&nbsp;PREÇO (R$)&nbsp;</th>
-                    <th>&nbsp;REMOVER&nbsp;</th>
-                    <tbody id="resultados"></tbody>
-                </table>
-            </div>
-        </section>
-        <footer>
-            <p>COPYRIGHT &copy; 2020 | <a href="https://github.com/alpdias" target="_blank">PAULO</a></p>
-        </footer>
+        <h1>CONTROLE DE ESTOQUE</h1>
+        <div id="dados">
+            <p>&nbsp;&nbsp;Preencha os campos para adicionar ou remover um item! &#128230;</p>
+            <input type="text" name="produto" id="produto" placeholder="Nome do Item" autocomplete="off"/>
+            <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" autocomplete="off" inputmode="numeric"/>
+            <input type="number" name="preço" id="preço" placeholder="Preço R$" autocomplete="off" inputmode="numeric"/>
+            <button name="adicionar" id="adicionar" onclick="verificar(), adicionar(), mostrarResultado()">ADICIONAR</button>
+            <button name="excluir" id="excluir" onclick="excluir(), mostrarResultado()">EXCLUIR</button>
+        </div>
+        <div id="estoque">
+            <table cellspacing="10" cellpadding="2" width="100%" margin="auto">
+                <th>&nbsp;ITEM&nbsp;</th>
+                <th>&nbsp;QUANTIDADE (UND)&nbsp;</th>
+                <th>&nbsp;PREÇO (R$)&nbsp;</th>
+                <th>&nbsp;REMOVER&nbsp;</th>
+                <tbody id="resultados"></tbody>
+            </table>
+        </div>
+        <div id="rodape">
+            <footer>COPYRIGHT &copy; 2020 | <a href="https://github.com/alpdias" target="_blank">PAULO</a></footer>
+        </div>
         <script src="javascript/main.js"></script>
     </body>
 </html>
