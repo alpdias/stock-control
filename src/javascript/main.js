@@ -86,9 +86,7 @@ function removerItem(nome) { // funçao para remover um item do estoque (localSt
     
     var itens = JSON.parse(localStorage.getItem('estoqueItens')); // transforma uma 'string' em um JSON
     
-    var i = 0;
-    
-    for (i < itens.length; i++) { // busca os itens dentro do 'array' e verifica a quantidade
+    for (var i = 0; i < itens.length; i++) { // busca os itens dentro do 'array' e verifica a quantidade
         
         if (itens[i].nome === nome) {
             itens.splice(i, 1); // remove o item especifico
@@ -109,22 +107,22 @@ function mostrarResultado() { // funcao para mostrar os itens adicionados
     
     resultadoItens.innerHTML = ''; // inserir um elemento html
     
-    var i = 0;
-    
-    for (i < itens.length; i++) { // loop para mostrar os resultados buscando dentro do array
+    for (var i = 0; i < itens.length; i++) { // loop para mostrar os resultados buscando dentro do array
         
         var nome =  itens[i].nome;
         var quant = itens[i].quant;
         var valor = itens[i].valor;
           
-        resultadoItens.innerHTML += `\
+        resultadoItens.innerHTML += '\
             <tr>\
-            <td>${nome}</td>\ // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
-            <td>${quant}</td>\ // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
-            <td>${valor}</td>\ // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
-            <td><button onclick="removerItem(${nome})">&nbsp;&nbsp;X&nbsp;&nbsp;</button></td>\ // style="background-color: #B8336A; font-family: Acme, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;"
-            </tr>`; // insere os resultado dentro do elemento html 'tabel' pelo JS (nao cria um novo elemento e sim complementa o que ja tem) 
-
+            <td>' + nome + '</td>\
+            <td>' + quant + '</td>\
+            <td>' + valor + '</td>\
+            <td><button onclick="removerItem(\'' + nome + '\')">X</button></td>\
+            </tr>'; // insere os resultado dentro do elemento html 'tabel' pelo JS (nao cria um novo elemento e sim complementa o que ja tem) 
+            
+            // style="background-color: #B8336A; font-family: Acme, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;"
+            // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
         
         produto.value = ''; // zera os campos apos inserir um item
         quantidade.value = '';
