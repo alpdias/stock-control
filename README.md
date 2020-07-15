@@ -25,6 +25,7 @@ Simple inventory control, using <strong>JavaScript</strong>, <strong>HTML5</stro
 <strong>Available in my portfolio:</strong> https://paulodeveloper.netlify.com/
 
 Progress -> <strong>80%</strong> - Online
+
 JavaScript </br>
 HTML5 | CSS3 </br>
 Microsoft VSCode 1.41.1 </br>
