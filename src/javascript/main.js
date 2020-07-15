@@ -119,10 +119,10 @@ function mostrarResultado() { // funcao para mostrar os itens adicionados
           
         resultadoItens.innerHTML += `\
             <tr>\
-            <td style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);">${nome}</td>\
-            <td style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411)">${quant}</td>\
-            <td style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411)">${valor}</td>\
-            <td><button style="background-color: #B8336A; font-family: Acme, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;" onclick="removerItem(${nome})">&nbsp;&nbsp;X&nbsp;&nbsp;</button></td>\ 
+            <td>${nome}</td>\ // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
+            <td>${quant}</td>\ // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
+            <td>${valor}</td>\ // style="border-bottom: 0.5px solid rgba(0, 0, 0, 0.411);"
+            <td><button onclick="removerItem(${nome})">&nbsp;&nbsp;X&nbsp;&nbsp;</button></td>\ // style="background-color: #B8336A; font-family: Acme, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;"
             </tr>`; // insere os resultado dentro do elemento html 'tabel' pelo JS (nao cria um novo elemento e sim complementa o que ja tem) 
 
         
