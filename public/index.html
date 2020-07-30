@@ -7,6 +7,8 @@ Criado em 01/2020
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Controle de Estoque</title>
         <!--
         <link rel="stylesheet" href="css/view.css">
@@ -18,7 +20,9 @@ Criado em 01/2020
         </header>
         <main id="app">
             <section id="dados">
-                <p>Preencha os campos para adicionar ou remover um item! &#128230;</p>
+                <header>
+                    <p>Preencha os campos para adicionar ou remover um item! &#128230;</p>
+                </header>
                 <input type="text" name="produto" id="produto" placeholder="Nome do Item" autocomplete="off"/></br>
                 <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" autocomplete="off" inputmode="numeric"/></br>
                 <input type="number" name="preço" id="preço" placeholder="Preço R$" autocomplete="off" inputmode="numeric"/></br>
@@ -36,7 +40,7 @@ Criado em 01/2020
                 </table>
             </section>
         </main>
-        <footer id="rodape">
+        <footer>
             COPYRIGHT &copy; 2020 | <a href="https://github.com/alpdias" target="_blank">PAULO</a>
         </footer>
         <script src="../src/main.js"></script>
