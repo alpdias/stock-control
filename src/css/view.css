@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*
+Criado em 07/2020
+@Autor: Paulo https://github.com/alpdias
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap');
+}
+
+@font-face {
+    font-family: 'Staatliches', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap');
+}
