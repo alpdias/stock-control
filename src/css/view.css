@@ -5,19 +5,19 @@ Criado em 07/2020
 @Autor: Paulo https://github.com/alpdias
 */
 
-@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap');
+    font-family: Open Sans, sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 }
 
 @font-face {
-    font-family: 'Staatliches', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap');
+    font-family: Acme, sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 }
