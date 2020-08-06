@@ -23,3 +23,64 @@ Criado em 07/2020
     font-family: Acme, sans-serif;
     src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 }
+
+/* GERAL */
+body {
+    background-color: rgba(94, 94, 160, 0.767);
+    font-family: Open Sans, sans-serif;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+/* PROGRAMA */
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 18pt;
+    font-family: Acme, sans-serif;
+    margin-top: 40px;
+}
+
+.entradas {
+    margin: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    width: 80%;
+}
+
+.entrada-dados {
+    display: inline-block;
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+/* BOTOES */
+.botoes {
+    background-color: #e63164;
+    font-family: Acme, sans-serif;
+    font-weight: bolder;
+    color: white;
+    border-radius: 15px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    padding: 12px;
+    margin-top: 14px;
+}
+
+/* RODAPE */
+.rodape {
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 10pt;
+}
+
+.rodape a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 10pt;
+}
+
+/* TABELA */

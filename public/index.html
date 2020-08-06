@@ -11,24 +11,20 @@ Criado em 01/2020
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Controle de Estoque</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <!--
         <link rel="stylesheet" href="css/view.css">
-        -->
     </head>
     <body onload="mostrarResultado()">
-        <header>
-            <h1>CONTROLE DE ESTOQUE</h1>
-        </header>
-        <main id="app">
-            <header>
-                <p>Preencha os campos para adicionar ou remover um item! &#128230;</p>
+        <main id="app" class="texto-centro">
+            <header class="texto-principal">
+                <h1>CONTROLE DE ESTOQUE</h1>
             </header>
-            <section id="dados">
-                <input type="text" name="produto" id="produto" placeholder="Nome do Item" autocomplete="off"/></br>
-                <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" autocomplete="off" inputmode="numeric"/></br>
-                <input type="number" name="preço" id="preço" placeholder="Preço R$" autocomplete="off" inputmode="numeric"/></br>
-                <button name="adicionar" id="adicionar" onclick="verificar(), adicionar(), mostrarResultado()">ADICIONAR</button>
-                <button name="excluir" id="excluir" onclick="excluir(), mostrarResultado()">EXCLUIR</button>
+            <section id="dados" class="entrada-dados">
+                <p>Preencha os campos para adicionar ou remover um item! &#128230;</p>
+                <input class="entradas" type="text" name="produto" id="produto" placeholder="Nome do Item" autocomplete="off"/></br>
+                <input class="entradas" type="number" name="quantidade" id="quantidade" placeholder="Quantidade" autocomplete="off" input class="entradas"mode="numeric"/></br>
+                <input class="entradas" type="number" name="preço" id="preço" placeholder="Preço R$" autocomplete="off" inputmode="numeric"/></br>
+                <button class="botoes" name="adicionar" id="adicionar" onclick="verificar(), adicionar(), mostrarResultado()">ADICIONAR</button class="botoes">
+                <button class="botoes" name="excluir" id="excluir" onclick="excluir(), mostrarResultado()">EXCLUIR</button>
             </section>
             <section id="estoque">
                 <!-- cellspacing="10" cellpadding="2" width="100%" margin="auto" -->
@@ -41,7 +37,7 @@ Criado em 01/2020
                 </table>
             </section>
         </main>
-        <footer>
+        <footer class="rodape texto-centro">
             COPYRIGHT &copy; 2020 | <a href="https://github.com/alpdias" target="_blank">PAULO</a>
         </footer>
         <script src="../src/main.js"></script>
