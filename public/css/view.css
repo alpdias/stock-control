@@ -36,11 +36,17 @@ body {
 
 /* PROGRAMA */
 h1 {
+    display: block;
     color: white;
     font-weight: bolder;
     font-size: 18pt;
     font-family: Acme, sans-serif;
-    margin-top: 40px;
+    padding-top: 40px;
+}
+
+p {
+    display: block;
+    padding: 10px 30px 0px 30px;
 }
 
 .entradas {
