@@ -36,11 +36,11 @@ body {
 
 /* PROGRAMA */
 h1 {
-    display: block;
     color: white;
     font-weight: bolder;
     font-size: 18pt;
     font-family: Acme, sans-serif;
+    display: block;
     padding-top: 40px;
 }
 
@@ -50,9 +50,12 @@ p {
 }
 
 .entradas {
-    margin: 2px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
     width: 80%;
+    margin: 2px;
+    padding: 6px;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
 }
 
 .entrada-dados {
@@ -69,7 +72,7 @@ p {
     font-family: Acme, sans-serif;
     font-weight: bolder;
     color: white;
-    border-radius: 15px;
+    border-radius: 6px;
     border: transparent;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
     padding: 12px;
