@@ -8,10 +8,12 @@ Criado em 07/2020
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+/* RESETS DO HTML */
 * {
     box-sizing: border-box;
 }
 
+/* FONTES */
 @font-face {
     font-family: Open Sans, sans-serif;
     src: url('https://fonts.googleapis.com/css?family=Acme&display=swap');
