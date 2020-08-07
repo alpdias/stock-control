@@ -118,7 +118,7 @@ function mostrarResultado() { // funcao para mostrar os itens adicionados
                 <td>' + nome + '</td>\
                 <td>' + quant + '</td>\
                 <td>' + valor + '</td>\
-                <td><button onclick="removerItem(\'' + nome + '\')">X</button></td>\
+                <td><button class="botoes-tabela" onclick="removerItem(\'' + nome + '\')">X</button></td>\
             </tr>'; // insere os resultado dentro do elemento html 'tabel' pelo JS (nao cria um novo elemento e sim complementa o que ja tem) 
             
             // style="background-color: #B8336A; font-family: Acme, sans-serif; color: white; padding: 2%; border-radius: 4px; margin-top: 3%; margin-bottom: 0px; border: transparent; font-weight: bolder;"
