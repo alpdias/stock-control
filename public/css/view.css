@@ -106,9 +106,9 @@ p {
 
 /* TABELA */
 .saida-dados {
-    display: block;
-    font-size: 12px;
     background-color: #EBEBEB;
+    font-size: 12px;
+    display: block;
     border-radius: 10px;
     margin: 6px 15px 6px 15px;
     padding: 15px;
@@ -131,3 +131,16 @@ p {
     margin: 6px auto;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+
+    .entrada-dados {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .saida-dados {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
