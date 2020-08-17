@@ -132,7 +132,7 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+@media (max-width: 630px) {
 
     .entrada-dados {
         margin-right: 15px;
@@ -143,4 +143,5 @@ p {
         margin-right: 15px;
         margin-left: 15px;
     }
+
 }
