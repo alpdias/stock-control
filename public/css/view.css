@@ -5,15 +5,10 @@ Criado em 07/2020
 @Autor: Paulo https://github.com/alpdias
 */
 
+/* FONTES */
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-/* RESETS DO HTML */
-* {
-    box-sizing: border-box;
-}
-
-/* FONTES */
 @font-face {
     font-family: Open Sans, sans-serif;
     src: url('https://fonts.googleapis.com/css?family=Acme&display=swap');
@@ -22,6 +17,11 @@ Criado em 07/2020
 @font-face {
     font-family: Acme, sans-serif;
     src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+}
+
+/* RESETS DO HTML */
+* {
+    box-sizing: border-box;
 }
 
 /* GERAL */
