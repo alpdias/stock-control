@@ -12,9 +12,9 @@ Microsoft VSCode 1.41.1 </br>
 Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br> 
 
-![controle-estoque](https://github.com/alpdias/controle-estoque-js/blob/master/img/controle-estoque-view.png)
+![controle-estoque-views](https://github.com/alpdias/controle-estoque-js/blob/master/img/controle-estoque-views.png)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/df611e09-2747-4064-980c-a09bcd7002a5/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1a92f5f7-daea-481e-a2d1-49f5a60a2e36/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -32,8 +32,8 @@ Microsoft VSCode 1.41.1 </br>
 Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br>
 
-![controle-estoque](https://github.com/alpdias/controle-estoque-js/blob/master/img/controle-estoque-view.png)
+![controle-estoque-views](https://github.com/alpdias/controle-estoque-js/blob/master/img/controle-estoque-views.png)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/df611e09-2747-4064-980c-a09bcd7002a5/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1a92f5f7-daea-481e-a2d1-49f5a60a2e36/deploy-status)](https://app.netlify.com/sites/controle-estoque/deploys)
 
 --------------------------------------------------------------------------------------------------------------------------
