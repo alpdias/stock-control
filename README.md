@@ -4,7 +4,7 @@ Controle de estoque simples, utilizando <strong>JavaScript</strong>, <strong>HTM
 
 <strong>Disponível no meu portifólio:</strong> https://paulodeveloper.netlify.com/
 
-Andamento -> <strong>99%</strong> - Online
+Andamento -> <strong>100%</strong> - Online
 
 JavaScript </br>
 HTML5 | CSS3 </br>
@@ -24,7 +24,7 @@ Simple inventory control, using <strong>JavaScript</strong>, <strong>HTML5</stro
 
 <strong>Available in my portfolio:</strong> https://paulodeveloper.netlify.com/
 
-Progress -> <strong>99%</strong> - Online
+Progress -> <strong>100%</strong> - Online
 
 JavaScript </br>
 HTML5 | CSS3 </br>
