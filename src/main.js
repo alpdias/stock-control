@@ -115,9 +115,9 @@ function mostrarResultado() { // funcao para mostrar os itens adicionados
           
         resultadoItens.innerHTML += '\
             <tr>\
-                <td>' + nome + '</td>\
-                <td>' + quant + '</td>\
-                <td>' + valor + '</td>\
+                <td style="word-wrap: break-word;">' + nome + '</td>\
+                <td style="word-wrap: break-word;">' + quant + '</td>\
+                <td style="word-wrap: break-word;">' + valor + '</td>\
                 <td><button class="botoes-tabela" onclick="removerItem(\'' + nome + '\')">X</button></td>\
             </tr>'; // insere os resultado dentro do elemento html 'tabel' pelo JS (nao cria um novo elemento e sim complementa o que ja tem) 
             

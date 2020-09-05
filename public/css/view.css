@@ -108,7 +108,7 @@ p {
 .saida-dados {
     background-color: #EBEBEB;
     font-size: 12px;
-    display: block;
+    display: table;
     border-radius: 10px;
     margin: 6px 15px 6px 15px;
     padding: 15px;
