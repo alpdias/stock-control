@@ -105,12 +105,15 @@ p {
 }
 
 /* TABELA */
+#comport-table {
+    margin: 6px 15px 6px 15px;
+}
+
 .saida-dados {
+    text-align: center;
     background-color: #EBEBEB;
     font-size: 12px;
-    display: table;
     border-radius: 10px;
-    margin: 6px 15px 6px 15px;
     padding: 15px;
 }
 
@@ -138,10 +141,4 @@ p {
         margin-right: 15px;
         margin-left: 15px;
     }
-
-    .saida-dados {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
 }
