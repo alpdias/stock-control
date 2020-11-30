@@ -8,7 +8,6 @@ Andamento -> <strong>100%</strong> - Online
 
 JavaScript </br>
 HTML5 | CSS3 </br>
-Microsoft VSCode 1.41.1 </br>
 Codificação: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br> 
 
@@ -28,7 +27,6 @@ Progress -> <strong>100%</strong> - Online
 
 JavaScript </br>
 HTML5 | CSS3 </br>
-Microsoft VSCode 1.41.1 </br>
 Coding: -&lowast;- coding: utf-8 -&lowast;- </br>
 pt-BR </br>
 
