@@ -9,13 +9,13 @@ var preço = document.getElementById("preço"); // variavel que recebe o element
 
 function verificar() { // funçao para verificar se todos os items estao preenchidos antes de adicionar
 
-    if (produto.value == "" && quantidade.value == 0 && preço.value <= 0) {
+    if (produto.value.trim() === "" || quantidade.value == 0 || preço.value <= 0) {
         window.alert('Preencha todos os campos para adicionar um produto/item no estoque!'); // exibe alertas de erro
 
-    } else if (produto.value == "") {
+    } else if (produto.value.trim() === "") {
         window.alert('Preencha o "Nome do Item" para adicionar um produto/item no estoque!');
 
-    } else if (quantidade.value == 0) {
+    } else if (quantidade.value <= 0) {
         window.alert('Preencha a "Quantidade" para adicionar um produto/item no estoque!');
 
     } else if (preço.value <= 0) {
@@ -28,7 +28,7 @@ function excluir() { // funçao para excluir toda a lista de estoque ou nao caso
 
     if (confirm('Tem certeza que deseja excluir todos os produtos/itens do estoque?')) { // mostra uma confirmaçao antes de excluir todo o estoque
 
-        if (localStorage.length === 0) { // verificar se a quantidade do estoque e igual a zero
+        if (localStorage.length <= 0) { // verificar se a quantidade do estoque e igual a zero
             window.alert('Estoque vazio!');
 
         } else {
@@ -49,16 +49,9 @@ function adicionar() { // funcao para adicionar um novo produto ao estoque
     var qtd = document.getElementById("quantidade").value; 
     var prç = document.getElementById("preço").value;
 
-    if (!novo) { // verifica se todos os itens estao preenchidos antes de adicionar 
+    if (!novo.trim() || !qtd || !prç ) { // verifica se todos os itens estao preenchidos antes de adicionar 
         return false;
-
-    } else if (!qtd) {
-        return false; 
-
-    } else if (!prç) {
-        return false; // retorna 'false' caso nao esteja preenchido e não prosegue a funçao
-
-    };
+    }
 
     var item = { // cria o objeto 'item'
         nome: novo,  // atributos do objeto
